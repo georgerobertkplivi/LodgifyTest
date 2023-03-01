@@ -1,0 +1,26 @@
+{
+  "name": "lodgify-automation-qa-test",
+  "description": "Lodgify QA automation challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lodgify QA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.6.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GilbertoGNG/Lodgify-Automation-QA-Test.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/GilbertoGNG/Lodgify-Automation-QA-Test/issues"
+  },
+  "homepage": "https://github.com/GilbertoGNG/Lodgify-Automation-QA-Test#readme"
+}
