@@ -46,18 +46,8 @@ describe('Rental Page E2E Test',
 
       rentalPage.verifyAllSectionsDisplayed();
 
-      // rentalPage.selectArrivalAndDepatureDates(rental_test_data.arrivalDate, rental_test_data.departureDate);
+      rentalPage.selectArrivalAndDepatureDates(rental_test_data.arrivalDate, rental_test_data.departureDate);
 
-      //Start Trial
-
-      // Click on the input field to open the date picker
-      cy.get(rentalPage.arrivalDateText).click();
-
-      // Select the desired date (in this example, January 1, 2023)
-      cy.datepicker().selectDate(new Date('2023-01-01'));
-
-
-      //End Trail
       rentalPage.validatePriceChangesOnBookForButton(rental_test_data.guests);
 
       rentalPage.clickBookForButton();
